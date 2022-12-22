@@ -6,3 +6,13 @@ Course: Foundations of Health Informatics
 
 [https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954)
 
+
+## Topics
+
+### Storing and accessing data
+
+### Understanding healthcare data
+
+### Analyzing data
+
+### Designing data applications
