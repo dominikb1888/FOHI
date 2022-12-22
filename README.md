@@ -1,6 +1,6 @@
 # Foundations of Health Informatics
 
-Course: Foundations of Health Informatics 
+Course: Foundations of Health Informatics
 
 ## Literature
 
@@ -9,10 +9,26 @@ Course: Foundations of Health Informatics
 
 ## Topics
 
-### Storing and accessing data
+### 1. Storing and accessing data
 
-### Understanding healthcare data
+### 2. Understanding healthcare data
 
-### Analyzing data
+### 3. Analyzing data
 
-### Designing data applications
+### 4. Designing data applications
+
+
+## Toolbox
+
+- NeuroKit:  https://neuropsychology.github.io/NeuroKit
+- HeartPy: https://github.com/paulvangentcom/heartrate_analysis_python
+- Data focused Python (FHIR): https://briankolowitz.github.io/data-focused-python/resources
+- DICOM to FHIR converter: https://github.com/LinuxForHealth/dicom-fhir-converter
+- Synthea Patient Data Generator: https://github.com/synthetichealth/synthea
+- HAPI FHIR: https://github.com/hapifhir/hapi-fhir
+- ORTHANC: FOSS Lightweight DICOM Server: https://www.orthanc-server.com/
+- FHIRtoRDF: https://github.com/BD2KOnFHIR/fhirtordf
+
+## Additional Reading
+
+Python for Data Analysis: https://wesmckinney.com/pages/book.html
