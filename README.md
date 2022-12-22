@@ -4,5 +4,5 @@ Course: Foundations of Health Informatics
 
 ## Literature
 
-[](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954)
+[https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954)
 
