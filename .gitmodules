@@ -1,0 +1,3 @@
+[submodule "tools/rdftools"]
+	path = tools/rdftools
+	url = https://github.com/johnstonskj/rdftools
