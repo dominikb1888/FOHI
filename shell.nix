@@ -16,10 +16,32 @@ let
     # pm4py
     # gnuhealth
    # Testing and CLI
+
+
     pytest
+
 
     # CLI
     rich
+
+    # Modules outside of nixpkgs
+    (
+    buildPythonPackage rec {
+      pname = "rdftools";
+      version = "0.2.0a";
+      src = fetchPypi {
+        inherit pname version;
+        sha256 = "0c398154c86de1e29fe3916dd26397ebbd7101c05672459b13124e6bc4e674b1";
+      };
+      doCheck = false;
+      propagatedBuildInputs = [
+        python-i18n
+        rdflib
+        pyyaml
+      ];
+    }
+    )
+
   ];
 
 in pkgs.mkShell {

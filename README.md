@@ -93,12 +93,13 @@ Health Informatics is the application of digital methods and tools to processes 
 ### Literature:
 
 - Theory: Biomedical Informatics (https://link.springer.com/book/10.1007/978-3-030-58721-5)
-- Hands-on: https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=29441724&query=Healthcare+data
-- https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954&query=Introduction+to+healthcare+informatics+
+- Hands-on: https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=29441724
+- https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954
 
 
 ### Additional Readings:
 
+- Interoperability and Modeling: https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=4562479
 - https://link.springer.com/book/10.1007/978-3-030-91563-6
 - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=7021286
 - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6715215
