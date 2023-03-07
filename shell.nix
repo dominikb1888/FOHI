@@ -7,6 +7,7 @@ let
     jupyter
     pandas
     numpy
+    matplotlib
 
     # Database Tools
     sqlalchemy
@@ -20,13 +21,30 @@ let
 
     pytest
 
+    # FHIR
+    (buildPythonPackage rec {
+      pname = "fhir.resources";
+      version = "6.5.0";
+      src = fetchPypi {
+        inherit pname version;
+        sha256 = "1d02ff2547e5b6323543c8ce9916e0c9e5536847b3b2171acb1f51a86efba16e";
+      };
+      doCheck = false;
+      propagatedBuildInputs = [
+          pytest-runner
+          pydantic
+      ]; })
+
+    #DICOM
+    pydicom
+
+    garminconnect
 
     # CLI
     rich
 
     # Modules outside of nixpkgs
-    (
-    buildPythonPackage rec {
+    (buildPythonPackage rec {
       pname = "rdftools";
       version = "0.2.0a";
       src = fetchPypi {
@@ -38,9 +56,10 @@ let
         python-i18n
         rdflib
         pyyaml
-      ];
-    }
-    )
+      ]; })
+
+
+
 
   ];
 

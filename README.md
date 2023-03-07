@@ -61,7 +61,7 @@ Health Informatics is the application of digital methods and tools to processes 
 - How to store and server health data
 - How to build data intensive applications
 - Setting up our Dev Environment
-- Running GNU Healthcare
+- Building a very simple HIS from scratch with FastAPI and FHIR
 - Running Synthea
 - Using Jupyter Notebooks
 
