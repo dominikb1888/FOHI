@@ -119,7 +119,7 @@ https://link.springer.com/book/10.1007/978-3-031-11302-4
 
 
 ## Exercise and Tutorials
-
+- RESTful APIs: https://www.restapitutorial.com/
 - Testing Database Interactions with Python: https://medium.com/@geoffreykoh/fun-with-fixtures-for-database-applications-8253eaf1a6d
 - Process Mining in Healthcare: https://medium.com/@c3_62722/process-mining-with-python-tutorial-a-healthcare-application-part-1-ae02027a050
 
