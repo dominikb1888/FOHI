@@ -74,6 +74,7 @@ Health Informatics is the application of digital methods and tools to processes 
 4. Deep Dive: Electronic Health Records (EHR)
 5. Deep Dive: Imaging Data (DICOM, PACS)
 6. Deep Dive: Wearable Device Data (Garmin)
+  - https://martin-ueding.de/posts/heart-rate-monitor-with-python/
 7. Deep Dive: Lab Devices and Data
 8. Deep Dive: Claims Data
 

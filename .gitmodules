@@ -1,3 +1,6 @@
 [submodule "tools/rdftools"]
 	path = tools/rdftools
 	url = https://github.com/johnstonskj/rdftools
+[submodule "fohispital"]
+	path = fohispital
+	url = git@github.com:dominikb1888/fohispital.git
