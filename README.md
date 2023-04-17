@@ -1,6 +1,8 @@
 # Foundations of Health Informatics
 
-Course: Foundations of Health Informatics
+Course Project: https://github.com/dominikb1888/fohispital
+
+In our course project we will try and apply the core topics of our course directly and hands-on by building a web service of a ficticious hospital serving FHIR/JSON of many relevant types of healthcare data.
 
 ## Literature
 
