@@ -6,8 +6,9 @@ In our course project we will try and apply the core topics of our course direct
 
 ## Literature
 
-[https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954)
-Theory: https://link.springer.com/book/10.1007/978-3-030-58721-5
+Hands-on: [https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954)
+
+Recommended Reading: https://link.springer.com/book/10.1007/978-3-030-58721-5
 
 ## Goals:
 
