@@ -11,6 +11,8 @@ Session 3
 
 - Understanding the need for data validation (formal check for valid JSON)
 - Allow to retrieve JSON Data
+- https://github.com/dominikb1888/fohispital/tree/0a_FASTapi-JSON-post
+
 
 Session 4
 
