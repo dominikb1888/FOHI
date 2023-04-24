@@ -30,3 +30,24 @@ Homework:
 - Add a similar route to our application
 - Play around with actual data from that resource
 - You might need to: Add a new folder for that data, overcome random errors
+
+
+## Session 4 - 24.03.2023
+
+Data Formats and Data Storage
+
+Agenda:
+- [ ] Recap Homework (checking routes and working on pull requests)
+- [ ] Data Formats (JSON, CSV, ND-JSON, JSON-LD, RDF)
+- [ ] Build a database for our raw data (Options: SQLite, Postgres BJSON, RDF)
+
+
+## Session 5 - 01.05.2023
+
+Accessing and Querying Data
+
+Agenda:
+- [ ] SQL
+- [ ] REST
+- [ ] GraphQL
+- [ ] SPARQL
