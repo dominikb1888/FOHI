@@ -73,7 +73,10 @@ Homework in-class:
 Accessing and Querying Data
 
 Agenda:
-- [ ] SQL
+- Databases: document, relational, graph:
+    - https://aws.plainenglish.io/how-to-choose-the-right-database-31af8b0260d3
+    - https://medium.com/fintechexplained/the-guide-to-choose-the-right-database-for-your-project-74b1af4150ab
+    - https://towardsdatascience.com/choose-the-right-database-model-free-your-data-from-spreadsheets-8d1129626b42
 - [o] Redis
-- [ ] GraphQL
-- [ ] SPARQL
+- [ ] SQL
+- [ ] Neo4j
