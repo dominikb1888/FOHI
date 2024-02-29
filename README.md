@@ -1,4 +1,4 @@
-# Foundations of Health Informatics
+# Foundations of Health Informatics - Networking and Data Exchange in Healthcare
 
 Course Project: https://github.com/dominikb1888/fohispital
 
@@ -12,10 +12,19 @@ Recommended Reading: https://link.springer.com/book/10.1007/978-3-030-58721-5
 
 ## Goals:
 
-Sections 1 and 2: Knowledge Pyramid with focus on health and healthcare
-Sections 3 and 4: Data Analytics and Application Development with Python
+- 1 and 2: Gain the technical basics to provide and retrieve data over computer networks
+- 3 and 4: Understand
 
-### 1. Storing and accessing data
+## Topics:
+
+### 1. Computer Networking, Security, and Identity
+
+- Understand and apply network protocols (TCP, UDP)
+- Understand and apply Application protocols (HTTP)
+- Gain a basic overview on network and application security (Type Safety, Pen Testing)
+- Understand digital identities and authentication
+
+### 2. Storing and accessing data
 
 - What is health data and information?
 - Which technologies exist for storing it (File, Database, Graph Database)
@@ -23,74 +32,104 @@ Sections 3 and 4: Data Analytics and Application Development with Python
 - Which technologies exist for accessing it (SQL, REST APIs, GraphQL, SPARQL)
 
 
-### 2. Understanding healthcare data
+### 3. Understanding healthcare data
 
 - How are decision and action created in healthcare?
 - How is FHIR applied in clinical documents and workflows?
 - What are common Ontologies, Terminologies, and Code Sets?
 
 
-### 3. Analyzing data
-
-- What is data quality in healthcare and how to assess it?
-- What are sources of healthcare data? (Wearables, Devices, Systems, Reports)
-- How can machine learning and natural language processing be applied?
-- What are the potentials of deep learning and AI in healthcare?
-
-
-### 4. Designing data applications
+### 4. Designing healthcare data applications
 
 - Cloud Computing and Hybrid Cloud Computing in Healthcare
 - Web Application Development
 - Big data analytics and processing
 
 
+## Deliverables
+
+You are required to submit a set of ungraded deliverables during the course of the semester. I will provide feedback as we go. Please complete these deliverables before each session. The first deliverable is required for session 1. So,please work on this before the first class.
+
+- Until Session 1: Develop HTTP client and server: https://beej.us/guide/bgnet0/html/#project-http-client-and-server
+- Until Session 3: Develop a better Web Server: https://beej.us/guide/bgnet0/html/#project-a-better-web-server
+- Until Session 6: Analyze Network Traffic of your Server: https://www.youtube.com/watch?v=ty8bEFuVM-I
+- Until Session 8: Develop a Multiuser (Doctor-Patient) Chat Client and Server: https://beej.us/guide/bgnet0/html/#project-multiuser-chat-client-and-server
+- Until Session 10: Allow your users to exchange valid(!) FHIR Data as JSON. Serve the data correctly to all authenticated and authorized users.
+- Until Session 13: Allow users to add Imaging and/or Sensor data to your FHIR application using the correct FHIR Resources. Serve the data again to all authenticated and authorized users
+- Until Session 15: Make your app deployable to the cloud using Docker and Github Codespaces, Remove as many dependencies as possible.
+
 ## Sessions
 
 Health Informatics is the application of digital methods and tools to processes around health and healthcare. This may be within a clinical environment or before that. The reason data  becomes health data is the question we ask to that data or the task we want to automate based on it. Storing and accessing this data and making it useful for healthcare professionals is key.
 
+### 1. Networking Basics and HTTP (Chapter 1-5: https://beej.us/guide/bgnet0/html/#networking-overview)
 
-### A. Introduction to Health Informatics
+- Understand the OSI model
+- Explain the basic interactions of client-servers on the internet
+- Be able to program and reason about HTTP clients and servers
 
-1. What is Health-care Data, why health informatics?
+- Reading (HTTP Guide): https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+### 2. IP (Chapter 6-13: https://beej.us/guide/bgnet0/html/#the-internet-protocol-ip)
+
+### 3. TCP and UDP (Chapter 14 - 16: https://beej.us/guide/bgnet0/html/#transmission-control-protocol-tcp)
+
+- Building a Server from Scratch using Sockets API: https://beej.us/guide/bgnet/html/
+
+### 4. IP Subnets, Routing and ARP (Chapter 17 - 23: https://beej.us/guide/bgnet0/html/#ip-subnets-and-subnet-masks)
+
+### 5. Network Security: Packet Tracing, Port Scanning and Firewalls (Chapter 24-30: https://beej.us/guide/bgnet0/html/#network-hardware)
+
+- Further Reading:
+    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=30673923&query=
+    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=31009083&query=web%20security
+
+### 6. DNS, NAT, DHCP, Firewalls (Chapter 31-36: https://beej.us/guide/bgnet0/html/#domain-name-system-dns)
+
+- Port Scanning and Packet Tracing: https://www.redhat.com/sysadmin/quick-nmap-inventory
+
+### 7. HTTP Security: Trusting Users and User Data (Chapter 37: https://beej.us/guide/bgnet0/html/#trusting-user-data)
+
+- Reading (HTTP Security, HTTP access control (CORS), HTTP authentication): https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+- Authentication Methods (Basic, Session, Token, JWT, OAuth, SSO): https://testdriven.io/blog/web-authentication-methods/, https://byby.dev/auth-methods
+- Further Reading:
+    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=31071624&query=web%20application%20security
+    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=30330504&query=
+    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=7114316&query=authentication
+
+
+### 8. Health Informatics and Healthcare Data
+
+1. Lecture:  What is Health-care Data, why health informatics?
 - History of Health, Healthcare, Biomedical Informatics
 - What is health data? How does data become health data, healthcare data, medical data?
 - What are current trends and stati in different regions
 - Goals: What is this course about: Data Engineering for health systems
 
-2. Technical Framework and Process: Nix, Docker, Postgresql, Python, Java, Neo4j, RDF
+2. Hands-on: Technical Framework and Process: Nix, Docker, Postgresql, Rust, Python, Java, Neo4j, RDF
 - How to build replicable systems
 - How to run and serve microservices
 - How to store and server health data
 - How to build data intensive applications
 - Setting up our Dev Environment
-- Building a very simple HIS from scratch with FastAPI and FHIR
+- Building a simple HIS from scratch using FHIR
 - Running Synthea
 - Using Jupyter Notebooks
 
-### B. Data and Data Formats
 
-3. Interoperability: Standardized vocabularies in healthcare
-4. Deep Dive: Electronic Health Records (EHR)
-5. Deep Dive: Imaging Data (DICOM, PACS)
-6. Deep Dive: Wearable Device Data (Garmin)
+### 9. Interoperability: Standardized vocabularies in healthcare
+
+### 10. Document Data: Electronic Health Records (EHR)
+
+### 11. Imaging Data (DICOM, PACS)
+
+### 12. Sensor Data: Deep Dive: Wearable Device Data (Garmin)
   - https://martin-ueding.de/posts/heart-rate-monitor-with-python/
-7. Deep Dive: Lab Devices and Data
-8. Deep Dive: Claims Data
 
-### C. Data Analytics, ML, and Graphs
+### 13. Data Normalization and Harmonization
 
-9. Analytics and ML
-10. Federated Learning
-11. NLP
-12. Data Normalization and Harmonization
-13. Graphs and Graph-based Analytics
-
-
-### D. Building and Deploying Systems
-
-14. Cloud Computing
-15. Dev Ops
+### 14. Building and Deploying Systems (Cloud Computing, Dev Ops, Dependency Management)
 
 
 
