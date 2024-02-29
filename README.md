@@ -2,101 +2,140 @@
 
 Course Project: https://github.com/dominikb1888/fohispital
 
-In our course project we will try and apply the core topics of our course directly and hands-on by building a web service of a ficticious hospital serving FHIR/JSON of many relevant types of healthcare data.
+In our course project we will build an interactive web application for exchanging healthcare data between doctors and patients. We will (step-by-step) extend it and apply our knowledge on Networking, Healthcare Data and Security.
 
 ## Literature
 
-Hands-on: [https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954)
+- Networking: [https://beej.us/guide/bgnet0/html/](https://beej.us/guide/bgnet0/html/)
+- Healthcare Data: [https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954)
+- Security: [https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=7114316](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=7114316)
 
 Recommended Reading: https://link.springer.com/book/10.1007/978-3-030-58721-5
 
 ## Goals:
 
-- 1 and 2: Gain the technical basics to provide and retrieve data over computer networks
-- 3 and 4: Understand
+- Networking: Gain the technical basics to provide and retrieve data over computer networks
+- Interoperability: Understand healthcare data and exchange formats
+- Security: Understand basic pitfalls of security in web applications
 
-## Topics:
+## Objectives and Topics:
 
-### 1. Computer Networking, Security, and Identity
+### 1.Networking: Computer Networking, Security, and Identity
 
 - Understand and apply network protocols (TCP, UDP)
 - Understand and apply Application protocols (HTTP)
-- Gain a basic overview on network and application security (Type Safety, Pen Testing)
+- Gain a basic overview on network and application security (Type Safety, Pen-Testing)
 - Understand digital identities and authentication
 
-### 2. Storing and accessing data
+### 2. Interoperability: Understanding, Storing and accessing healthcare data
 
-- What is health data and information?
 - Which technologies exist for storing it (File, Database, Graph Database)
 - Which technologies (CSV, JSON, ND-JSON, JSON-LD, RDF) and standards exist for making it interoperable (DICOM, FHIR, Snomed, ICD-10, Loinc)
 - Which technologies exist for accessing it (SQL, REST APIs, GraphQL, SPARQL)
-
-
-### 3. Understanding healthcare data
-
-- How are decision and action created in healthcare?
 - How is FHIR applied in clinical documents and workflows?
-- What are common Ontologies, Terminologies, and Code Sets?
 
-
-### 4. Designing healthcare data applications
+### 3. Security: Designing a secure healthcare application back-end
 
 - Cloud Computing and Hybrid Cloud Computing in Healthcare
-- Web Application Development
-- Big data analytics and processing
+- Web Application Development (back-end)
+- Basics of Web Application Security and Pen-Testing
 
 
 ## Deliverables
 
 You are required to submit a set of ungraded deliverables during the course of the semester. I will provide feedback as we go. Please complete these deliverables before each session. The first deliverable is required for session 1. So,please work on this before the first class.
 
+- Until Session 1: Create a virtual machine with KALI Linux (https://www.kali.org/) and get comfortable
 - Until Session 1: Develop HTTP client and server: https://beej.us/guide/bgnet0/html/#project-http-client-and-server
+
 - Until Session 3: Develop a better Web Server: https://beej.us/guide/bgnet0/html/#project-a-better-web-server
 - Until Session 6: Analyze Network Traffic of your Server: https://www.youtube.com/watch?v=ty8bEFuVM-I
-- Until Session 8: Develop a Multiuser (Doctor-Patient) Chat Client and Server: https://beej.us/guide/bgnet0/html/#project-multiuser-chat-client-and-server
+- Until Session 8: Develop a multi-user (Doctor-Patient) Chat Client and Server: https://beej.us/guide/bgnet0/html/#project-multiuser-chat-client-and-server
 - Until Session 10: Allow your users to exchange valid(!) FHIR Data as JSON. Serve the data correctly to all authenticated and authorized users.
-- Until Session 13: Allow users to add Imaging and/or Sensor data to your FHIR application using the correct FHIR Resources. Serve the data again to all authenticated and authorized users
-- Until Session 15: Make your app deployable to the cloud using Docker and Github Codespaces, Remove as many dependencies as possible.
+- Until Session 13: Allow users to add Imaging and/or Sensor data to your FHIR application using the correct FHIR Resources. Serve the data again to all authenticated and authorized users.
+- Until Session 15: Make your app deployable to the cloud using Docker and Github Codespaces, Remove as many dependencies as possible. Show a simple pen-testing strategy.
+
 
 ## Sessions
 
 Health Informatics is the application of digital methods and tools to processes around health and healthcare. This may be within a clinical environment or before that. The reason data  becomes health data is the question we ask to that data or the task we want to automate based on it. Storing and accessing this data and making it useful for healthcare professionals is key.
 
-### 1. Networking Basics and HTTP (Chapter 1-5: https://beej.us/guide/bgnet0/html/#networking-overview)
+Structure:
 
+- Presentations (You Show, I feedback): Demonstration of Deliverables (30 min)
+- Lecture (I Show, You question): Networking, Health Data or Security Topic (60-90min)
+- Exercise (You do, I support): Applied networking, healthcare data and security (60-90min)
+
+### 1. Networking Basics and HTTP
+
+Lecture (Chapter 1-5: https://beej.us/guide/bgnet0/html/#networking-overview):
 - Understand the OSI model
 - Explain the basic interactions of client-servers on the internet
 - Be able to program and reason about HTTP clients and servers
 
+Exercise (Chapter 4-5: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=138):
+- Overview on Network Analysis and Security Tools (Kali Linux, Burp, Wirshark, nmap)
+
+Recommended Reading:
 - Reading (HTTP Guide): https://developer.mozilla.org/en-US/docs/Web/HTTP
 
-### 2. IP (Chapter 6-13: https://beej.us/guide/bgnet0/html/#the-internet-protocol-ip)
 
-### 3. TCP and UDP (Chapter 14 - 16: https://beej.us/guide/bgnet0/html/#transmission-control-protocol-tcp)
+### 2. IP
 
+Lecture (Chapter 6-13: https://beej.us/guide/bgnet0/html/#the-internet-protocol-ip):
+
+Exercise (Chapter 4a: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=312):
+- Attacks on LAN and IP
+
+
+### 3. TCP and UDP
+
+Lecture (Chapter 14 - 16: https://beej.us/guide/bgnet0/html/#transmission-control-protocol-tcp):
 - Building a Server from Scratch using Sockets API: https://beej.us/guide/bgnet/html/
 
-### 4. IP Subnets, Routing and ARP (Chapter 17 - 23: https://beej.us/guide/bgnet0/html/#ip-subnets-and-subnet-masks)
+Exercise (Chapter 4b: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=328):
+- Layer 4 TCP and UDP Attacks
+- TCP Sequence Attacks
+- Session Hijacking
 
-### 5. Network Security: Packet Tracing, Port Scanning and Firewalls (Chapter 24-30: https://beej.us/guide/bgnet0/html/#network-hardware)
 
-- Further Reading:
-    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=30673923&query=
-    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=31009083&query=web%20security
+### 4. IP Subnets, Routing and ARP
 
-### 6. DNS, NAT, DHCP, Firewalls (Chapter 31-36: https://beej.us/guide/bgnet0/html/#domain-name-system-dns)
+Lecture (Chapter 17 - 23: https://beej.us/guide/bgnet0/html/#ip-subnets-and-subnet-masks):
 
+Exercise (Chapter 12: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=386)
+
+
+### 5. Network Security: Packet Tracing, Port Scanning and Firewalls
+
+- Lecture (Chapter 24-30: https://beej.us/guide/bgnet0/html/#network-hardware):
+
+- Exercise ():
+
+
+### 6. DNS, NAT, DHCP, Firewalls
+
+Lecture (Chapter 31-36: https://beej.us/guide/bgnet0/html/#domain-name-system-dns):
+- Programming Network Components
+- Cloud, Virtualization and Network Components
+
+Exercise (Chapter 8: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=246):
+- Network Traffic Analysis
+- Eavesdropping
 - Port Scanning and Packet Tracing: https://www.redhat.com/sysadmin/quick-nmap-inventory
+
+
 
 ### 7. HTTP Security: Trusting Users and User Data (Chapter 37: https://beej.us/guide/bgnet0/html/#trusting-user-data)
 
-- Reading (HTTP Security, HTTP access control (CORS), HTTP authentication): https://developer.mozilla.org/en-US/docs/Web/HTTP
+Lecture:
+- Encryption Methods
+- HTTP Security, HTTP access control (CORS), HTTP authentication: https://developer.mozilla.org/en-US/docs/Web/HTTP):
+- Authentication Methods (Basic, Session, Token, JWT, OAuth, SSO): https://testdriven.io/blog/web-authentication-methods/, https://byby.dev/auth-methods)
 
-- Authentication Methods (Basic, Session, Token, JWT, OAuth, SSO): https://testdriven.io/blog/web-authentication-methods/, https://byby.dev/auth-methods
-- Further Reading:
-    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=31071624&query=web%20application%20security
-    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=30330504&query=
-    - https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=7114316&query=authentication
+Exercise:
+- https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=446
+
 
 
 ### 8. Health Informatics and Healthcare Data
