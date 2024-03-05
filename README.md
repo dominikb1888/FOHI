@@ -9,6 +9,10 @@ In our course project we will build an interactive web application for exchangin
 - Networking: [https://beej.us/guide/bgnet0/html/](https://beej.us/guide/bgnet0/html/)
 - Healthcare Data: [https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954)
 - Security: [https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=7114316](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=7114316)
+## Online Course Materials (Cisco Networking Basics)
+
+- https://skillsforall.com/course/networking-basics?courseLang=en-US
+
 
 Recommended Reading: https://link.springer.com/book/10.1007/978-3-030-58721-5
 
@@ -66,15 +70,18 @@ Structure:
 - Lecture (I Show, You question): Networking, Health Data or Security Topic (60-90min)
 - Exercise (You do, I support): Applied networking, healthcare data and security (60-90min)
 
+
 ### 1. Networking Basics and HTTP
 
 Lecture (Chapter 1-5: https://beej.us/guide/bgnet0/html/#networking-overview):
 - Understand the OSI model
 - Explain the basic interactions of client-servers on the internet
+- Understand the Sockets API and its implementation different programming languages
 - Be able to program and reason about HTTP clients and servers
 
 Exercise (Chapter 4-5: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=138):
 - Overview on Network Analysis and Security Tools (Kali Linux, Burp, Wirshark, nmap)
+- Starting the Knowledge Check on Networking (https://skillsforall.com/course/networking-basics?courseLang=en-US)
 
 Recommended Reading:
 - Reading (HTTP Guide): https://developer.mozilla.org/en-US/docs/Web/HTTP
@@ -83,8 +90,14 @@ Recommended Reading:
 ### 2. IP
 
 Lecture (Chapter 6-13: https://beej.us/guide/bgnet0/html/#the-internet-protocol-ip):
+- Know and understand the difference between different protocols (IPv4, IPv6, ICMP, IPSec)
+- Understand dynamic and static addresses as well as subnets in bother IPv4, IPv6
+- Understand and apply Endianness
+- Understanding packets and their parsing
 
 Exercise (Chapter 4a: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=312):
+- Implement Atomic Time
+- Implement Word Server
 - Attacks on LAN and IP
 
 
@@ -92,6 +105,7 @@ Exercise (Chapter 4a: https://ebookcentral.proquest.com/lib/th-deggendorf/reader
 
 Lecture (Chapter 14 - 16: https://beej.us/guide/bgnet0/html/#transmission-control-protocol-tcp):
 - Building a Server from Scratch using Sockets API: https://beej.us/guide/bgnet/html/
+- Validating a TCP Packet
 
 Exercise (Chapter 4b: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=328):
 - Layer 4 TCP and UDP Attacks
@@ -99,18 +113,29 @@ Exercise (Chapter 4b: https://ebookcentral.proquest.com/lib/th-deggendorf/reader
 - Session Hijacking
 
 
-### 4. IP Subnets, Routing and ARP
+### 4. IP Subnets, IP Routing and ARP
 
 Lecture (Chapter 17 - 23: https://beej.us/guide/bgnet0/html/#ip-subnets-and-subnet-masks):
+- Understand subnet masks
+- Understand routing tables and algorithms
+- Computing and finding subnets
+- Know what the Link Layer
+- Understand IP to MAC address resolution (ARP)
 
 Exercise (Chapter 12: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=386)
-
+- Implement Dijkstra's Algorithm in Python
+- Sniffing ARP Packets with Wireshark
 
 ### 5. Network Security: Packet Tracing, Port Scanning and Firewalls
 
-- Lecture (Chapter 24-30: https://beej.us/guide/bgnet0/html/#network-hardware):
+Lecture (Chapter 24-30: https://beej.us/guide/bgnet0/html/#network-hardware):
+- Know and understand common network hardware components and metrics
+- Building and analysing small computer networks
+- Understanding virtual networks components in cloud environments
+- Understand and use the Select Function from Sockets API
 
-- Exercise ():
+Exercise ():
+- Creating a network of microservices for scalable web applications (DB, API, Load Balancer, Reverse Proxy)
 
 
 ### 6. DNS, NAT, DHCP, Firewalls
