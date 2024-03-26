@@ -73,7 +73,7 @@ Structure:
 
 ### 1. Networking Basics and HTTP
 
-Lecture (Chapter 1-5: https://beej.us/guide/bgnet0/html/#networking-overview):
+Lecture (Chapter 1-5: https://beej.us/guide/bgnet0/html/#networking-overview, Chapter 2: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=60):
 - Understand the OSI model
 - Explain the basic interactions of client-servers on the internet
 - Understand the Sockets API and its implementation different programming languages
