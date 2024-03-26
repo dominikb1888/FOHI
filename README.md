@@ -79,7 +79,7 @@ Lecture (Chapter 1-5: https://beej.us/guide/bgnet0/html/#networking-overview, Ch
 - Understand the Sockets API and its implementation different programming languages
 - Be able to program and reason about HTTP clients and servers
 
-Exercise (Chapter 4-5: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=138):
+Exercise (Chapter 4: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=138):
 - Overview on Network Analysis and Security Tools (Kali Linux, Burp, Wirshark, nmap)
 - Starting the Knowledge Check on Networking (https://skillsforall.com/course/networking-basics?courseLang=en-US)
 
@@ -95,10 +95,10 @@ Lecture (Chapter 6-13: https://beej.us/guide/bgnet0/html/#the-internet-protocol-
 - Understand and apply Endianness
 - Understanding packets and their parsing
 
-Exercise (Chapter 10a: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=312):
-- Implement Atomic Time
-- Implement Word Server
-- Attacks on LAN and IP
+Exercise ([Chapter 5 + 8](https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=246)):
+- Finding Protocol Vulnerabilities
+- Network Traffic Analysis
+- Hacker 101 CTF |  Micro CMS: https://ctf.hacker101.com/ctf/start/2 (Sign-in via https://ctf.hacker101.com/ctf)
 
 
 ### 3. TCP and UDP
