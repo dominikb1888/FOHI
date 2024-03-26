@@ -1,7 +1,5 @@
 # Foundations of Health Informatics - Networking and Data Exchange in Healthcare
 
-Course Project: https://github.com/dominikb1888/fohispital
-
 In our course project we will build an interactive web application for exchanging healthcare data between doctors and patients. We will (step-by-step) extend it and apply our knowledge on Networking, Healthcare Data and Security.
 
 ## Literature
@@ -9,6 +7,7 @@ In our course project we will build an interactive web application for exchangin
 - Networking: [https://beej.us/guide/bgnet0/html/](https://beej.us/guide/bgnet0/html/)
 - Healthcare Data: [https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6272954)
 - Security: [https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=7114316](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=7114316)
+
 ## Online Course Materials (Cisco Networking Basics)
 
 - https://skillsforall.com/course/networking-basics?courseLang=en-US
