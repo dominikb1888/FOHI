@@ -95,7 +95,7 @@ Lecture (Chapter 6-13: https://beej.us/guide/bgnet0/html/#the-internet-protocol-
 - Understand and apply Endianness
 - Understanding packets and their parsing
 
-Exercise (Chapter 4a: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=312):
+Exercise (Chapter 10a: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=312):
 - Implement Atomic Time
 - Implement Word Server
 - Attacks on LAN and IP
@@ -107,7 +107,7 @@ Lecture (Chapter 14 - 16: https://beej.us/guide/bgnet0/html/#transmission-contro
 - Building a Server from Scratch using Sockets API: https://beej.us/guide/bgnet/html/
 - Validating a TCP Packet
 
-Exercise (Chapter 4b: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=328):
+Exercise (Chapter 10b: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=328):
 - Layer 4 TCP and UDP Attacks
 - TCP Sequence Attacks
 - Session Hijacking
