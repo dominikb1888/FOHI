@@ -15,12 +15,13 @@ except:
 # Make new UDP (datagram) socket
 s = socket.socket(type=socket.SOCK_DGRAM)
 
-# Send data to the server
-print("Sending message...")
-s.sendto(message.encode(), (server, port))
+while true:
+    # Send data to the server
+    print("Sending message...")
+    s.sendto(message.encode(), (server, port))
 
-# Wait for a reply
-data, sender = s.recvfrom(4096)
-print(f"Got reply: \"{data.decode()}\"")
+    # Wait for a reply
+    data, sender = s.recvfrom(4096)
+    print(f"Got reply: \"{data.decode()}\"")
 
 s.close()
