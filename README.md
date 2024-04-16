@@ -55,7 +55,7 @@ You are required to submit a set of ungraded deliverables during the course of t
 - Until Session 1: Develop HTTP client and server: https://beej.us/guide/bgnet0/html/#project-http-client-and-server
 
 - Until Session 3: Develop a better Web Server: https://beej.us/guide/bgnet0/html/#project-a-better-web-server
-- Until Session 6: Analyze Network Traffic of your Server: https://www.youtube.com/watch?v=ty8bEFuVM-I
+- Until Session 6: Validating a TCP Packet: https://beej.us/guide/bgnet0/html/#transmission-control-protocol-tcp
 - Until Session 8: Develop a multi-user (Doctor-Patient) Chat Client and Server: https://beej.us/guide/bgnet0/html/#project-multiuser-chat-client-and-server
 - Until Session 10: Allow your users to exchange valid(!) FHIR Data as JSON. Serve the data correctly to all authenticated and authorized users.
 - Until Session 13: Allow users to add Imaging and/or Sensor data to your FHIR application using the correct FHIR Resources. Serve the data again to all authenticated and authorized users.
