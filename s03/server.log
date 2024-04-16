@@ -1,0 +1,156 @@
+2024-04-09 10:40:19
+Connection from ('127.0.0.1', 58632)
+Full request:
+GET /file.txt HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 200 OK
+Metadata: ---Content-Type: text/plain   ---Content-Length: 16
+Connection closed
+--------------------
+
+2024-04-09 10:40:32
+Connection from ('127.0.0.1', 58637)
+Full request:
+GET /web/server/file.txt HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 404 Not Found
+Metadata: Content-Type: text/html
+Connection closed
+--------------------
+
+2024-04-09 10:40:37
+Connection from ('127.0.0.1', 58641)
+Full request:
+GET //web/server/file.txt HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 404 Not Found
+Metadata: Content-Type: text/html
+Connection closed
+--------------------
+
+2024-04-09 10:40:45
+Connection from ('127.0.0.1', 58644)
+Full request:
+GET /file.txt HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 200 OK
+Metadata: ---Content-Type: text/plain   ---Content-Length: 16
+Connection closed
+--------------------
+
+2024-04-09 10:40:47
+Connection from ('127.0.0.1', 58647)
+Full request:
+GET /file.txt HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 200 OK
+Metadata: ---Content-Type: text/plain   ---Content-Length: 16
+Connection closed
+--------------------
+
+2024-04-09 10:42:03
+Connection from ('127.0.0.1', 58660)
+Full request:
+GET /file.html.txt HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 404 Not Found
+Metadata: Content-Type: text/html
+Connection closed
+--------------------
+
+2024-04-09 10:42:50
+Connection from ('127.0.0.1', 58671)
+Full request:
+GET /file.html.txt HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 200 OK
+Metadata: ---Content-Type: text/plain   ---Content-Length: 16
+Connection closed
+--------------------
+
+2024-04-09 10:43:04
+Connection from ('127.0.0.1', 58677)
+Full request:
+GET /file.txt.html HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 404 Not Found
+Metadata: Content-Type: text/html
+Connection closed
+--------------------
+
+2024-04-09 10:43:21
+Connection from ('127.0.0.1', 58683)
+Full request:
+GET /file.txt.html HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 404 Not Found
+Metadata: Content-Type: text/html
+Connection closed
+--------------------
+
+2024-04-09 11:06:21
+Connection from ('127.0.0.1', 59464)
+Full request:
+GET /file.txt.html HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 404 Not Found
+Metadata: Content-Type: text/html
+Connection closed
+--------------------
+
+2024-04-09 11:07:02
+Connection from ('127.0.0.1', 59479)
+Full request:
+GET /file.txt HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 404 Not Found
+Metadata: Content-Type: text/html
+Connection closed
+--------------------
+
+2024-04-09 11:08:25
+Connection from ('127.0.0.1', 59493)
+Full request:
+GET /file.html.txt HTTP/1.1
+Host: localhost:28333
+User-Agent: curl/8.6.0
+Accept: */*
+
+Response: 200 OK
+Metadata: ---Content-Type: text/plain   ---Content-Length: 16
+Connection closed
+--------------------
+

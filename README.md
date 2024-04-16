@@ -1,5 +1,8 @@
 # Foundations of Health Informatics - Networking and Data Exchange in Healthcare
 
+=======
+Course Project: <TBD>
+
 In our course project we will build an interactive web application for exchanging healthcare data between doctors and patients. We will (step-by-step) extend it and apply our knowledge on Networking, Healthcare Data and Security.
 
 ## Literature
