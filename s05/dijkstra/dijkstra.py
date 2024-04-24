@@ -2,6 +2,8 @@ import sys
 import json
 import math  # If you want to use math.inf for infinity
 
+import netfuncs
+
 def dijkstras_shortest_path(routers, src_ip, dest_ip):
     """
     This function takes a dictionary representing the network, a source
@@ -56,8 +58,42 @@ def dijkstras_shortest_path(routers, src_ip, dest_ip):
     for madness.
     """
 
-    # TODO Write me!
-    pass
+    """
+    - Weise allen Knoten die beiden Eigenschaften (Attribute) „Distanz“ und „Vorgänger“ zu. Initialisiere die Distanz im Startknoten mit 0 und in allen anderen Knoten mit ∞.
+    - Solange es noch unbesuchte Knoten gibt, wähle darunter denjenigen mit minimaler (aufsummierter) Distanz aus und Speichere, dass dieser Knoten schon besucht wurde.
+    - Berechne für alle noch unbesuchten Nachbarknoten die Gesamtdistanz des Pfades über die Summe des jeweiligen  Kantengewichtes und der bereits berechneten Distanz des Pfades vom Startknoten zum aktuellen Knoten.
+    - Ist dieser Wert für einen Knoten kleiner als die dort gespeicherte bisherige aufsummierte Distanz des Pfades, aktualisiere sie und setze den aktuellen Knoten als Vorgänger. Dieser Schritt wird auch als Update oder Relaxation/Relaxierung bezeichnet.
+    """
+
+    rlist = {}
+    for router_ip, config in routers.items():
+        if netfuncs.ips_same_subnet(src_ip, dest_ip, config['netmask']):
+            return []
+
+        if router_ip == src_ip:
+            rlist[router_ip] = {'dist': 0, 'config': config, 'prev': None)
+        else:
+            rlist[router_ip] = {'dist': math.inf, 'config': config, 'prev': None)
+
+    path = []
+    while rlist:
+        for ip, values in rlist.items:
+
+            next = next(sort_connections(values['config']))
+            if values['dist'] == math.inf and next:
+                rlist[ip]['dist'] += next['ad']
+
+
+
+                if CONDITION: # distance between current sum of path is bigger than existing path cumsums
+                    rlist.pop(router_ip, None) # remove router ip from rlist
+            else:
+
+    return path
+
+def sort_connections(config: dict):
+    """ Returns a Generator of sorted connections of a route """
+    return sorted(config, lambda x: x['ad'])
 
 #------------------------------
 # DO NOT MODIFY BELOW THIS LINE

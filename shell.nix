@@ -1,13 +1,9 @@
 { pkgs ? import <nixpkgs> {} }:
 
 let
- pythonEnv = with pkgs.python310Packages; [
+ pythonEnv = with pkgs.python311Packages; [
     # Data Science Basics
     ipython
-    jupyter
-    pandas
-    numpy
-    matplotlib
 
 
     # Database Tools

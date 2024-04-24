@@ -1,5 +1,6 @@
 import pytest
-from dijsktra import dijkstras_shortest_path
+import json
+from dijkstra import dijkstras_shortest_path
 
 # Define test cases
 test_cases = [
@@ -25,11 +26,15 @@ test_cases = [
     ("10.34.79.81", "10.34.46.142", ['10.34.79.1', '10.34.91.1', '10.34.46.1'])
 ]
 
+with open("example1.json", "r") as f:
+    data = json.load(f)
+    routers = data['routers']
+
 # Define test function
 @pytest.mark.parametrize("source_ip, destination_ip, intermediaries", test_cases)
 def test_communication_flow(source_ip, destination_ip, intermediaries):
     # Here you can perform assertions based on your requirements
-    assert dijkstras_shortest_path(source_ip, destination_ip) == intermediaries
+    assert dijkstras_shortest_path(routers, source_ip, destination_ip) == intermediaries
 
 # Run tests
 if __name__ == "__main__":
