@@ -1,10 +1,20 @@
+from collections import defaultdict
 import sys
 import json
-import math  # If you want to use math.inf for infinity
-
+import heapq
 import netfuncs
 
-def dijkstras_shortest_path(routers, src_ip, dest_ip):
+def parse_routers(routers_data):
+    """Parses the router data into a graph representation with adjacency lists."""
+    graph = {}
+    for router_ip, router_info in routers_data.items():
+        if router_ip not in graph:
+            graph[router_ip] = {}
+        for neighbor_ip, connection in router_info['connections'].items():
+            graph[router_ip][neighbor_ip] = connection['ad']  # use administrative distance as weight
+    return graph
+
+def dijkstras_shortest_path(routers: list, src_ip: str, dest_ip: str) -> list[str]:
     """
     This function takes a dictionary representing the network, a source
     IP, and a destination IP, and returns a list with all the routers
@@ -57,43 +67,55 @@ def dijkstras_shortest_path(routers, src_ip, dest_ip):
     function. Having it all built as a single wall of code is a recipe
     for madness.
     """
+    # Find the appropriate routers for source and destination IPs
+    src_router = netfuncs.find_router_for_ip(routers, src_ip)
+    dest_router = netfuncs.find_router_for_ip(routers, dest_ip)
 
-    """
-    - Weise allen Knoten die beiden Eigenschaften (Attribute) „Distanz“ und „Vorgänger“ zu. Initialisiere die Distanz im Startknoten mit 0 und in allen anderen Knoten mit ∞.
-    - Solange es noch unbesuchte Knoten gibt, wähle darunter denjenigen mit minimaler (aufsummierter) Distanz aus und Speichere, dass dieser Knoten schon besucht wurde.
-    - Berechne für alle noch unbesuchten Nachbarknoten die Gesamtdistanz des Pfades über die Summe des jeweiligen  Kantengewichtes und der bereits berechneten Distanz des Pfades vom Startknoten zum aktuellen Knoten.
-    - Ist dieser Wert für einen Knoten kleiner als die dort gespeicherte bisherige aufsummierte Distanz des Pfades, aktualisiere sie und setze den aktuellen Knoten als Vorgänger. Dieser Schritt wird auch als Update oder Relaxation/Relaxierung bezeichnet.
-    """
+    # Check if either the source or destination is not in the graph
+    if src_router is None or dest_router is None:
+        return []
 
-    rlist = {}
-    for router_ip, config in routers.items():
-        if netfuncs.ips_same_subnet(src_ip, dest_ip, config['netmask']):
-            return []
+    # Convert router IPs to a useful graph format
+    graph = parse_routers(routers)
 
-        if router_ip == src_ip:
-            rlist[router_ip] = {'dist': 0, 'config': config, 'prev': None)
-        else:
-            rlist[router_ip] = {'dist': math.inf, 'config': config, 'prev': None)
+    # Dijkstra's algorithm initialization
+    min_heap = [(0, src_router, [])]  # (cumulative weight, node, path)
+    visited = set()
 
-    path = []
-    while rlist:
-        for ip, values in rlist.items:
+    while min_heap:
+        print(min_heap)
 
-            next = next(sort_connections(values['config']))
-            if values['dist'] == math.inf and next:
-                rlist[ip]['dist'] += next['ad']
+        current_weight, current_node, path = heapq.heappop(min_heap)
 
+        if current_node in visited:
+            continue
+        visited.add(current_node)
 
+        # Path update with the current node
+        current_path = path + [current_node]
 
-                if CONDITION: # distance between current sum of path is bigger than existing path cumsums
-                    rlist.pop(router_ip, None) # remove router ip from rlist
-            else:
+        if current_node == dest_router:
+            # Exclude the source and destination routers from the final path
+            return current_path
 
-    return path
+        # Explore the neighbors
+        for neighbor, weight in graph[current_node].items():
+            if neighbor not in visited:
+                heapq.heappush(min_heap, (current_weight + weight, neighbor, current_path))
 
-def sort_connections(config: dict):
-    """ Returns a Generator of sorted connections of a route """
-    return sorted(config, lambda x: x['ad'])
+    # If no path is found, return an empty list
+    return []
+
+# Mocked data and testing segment (you'd typically have this in separate files)
+if __name__ == "__main__":
+    # Example usage with a test case
+    with open("example1.json", "r") as f:
+        data = json.load(f)
+        routers_data = data['routers']
+
+    src = "10.34.52.158"
+    dest = "10.34.166.1"
+    print(dijkstras_shortest_path(routers_data, src, dest))
 
 #------------------------------
 # DO NOT MODIFY BELOW THIS LINE
