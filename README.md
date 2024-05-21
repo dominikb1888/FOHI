@@ -153,19 +153,8 @@ Exercise (Chapter 8: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.
 
 
 
-### 7. HTTP Security: Trusting Users and User Data (Chapter 37: https://beej.us/guide/bgnet0/html/#trusting-user-data)
 
-Lecture:
-- Encryption Methods
-- HTTP Security, HTTP access control (CORS), HTTP authentication: https://developer.mozilla.org/en-US/docs/Web/HTTP):
-- Authentication Methods (Basic, Session, Token, JWT, OAuth, SSO): https://testdriven.io/blog/web-authentication-methods/, https://byby.dev/auth-methods)
-
-Exercise:
-- https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=446
-
-
-
-### 8. Health Informatics and Healthcare Data
+### 7. Health Informatics and Healthcare Data
 
 1. Lecture:  What is Health-care Data, why health informatics?
 - History of Health, Healthcare, Biomedical Informatics
@@ -179,9 +168,21 @@ Exercise:
 - How to store and server health data
 - How to build data intensive applications
 - Setting up our Dev Environment
-- Building a simple HIS from scratch using FHIR
-- Running Synthea
+- Running Synthea to create FHIR Bundles
 - Using Jupyter Notebooks
+
+
+### 8. HTTP Security: Trusting Users and User Data (Chapter 37: https://beej.us/guide/bgnet0/html/#trusting-user-data)
+
+Lecture:
+- Encryption Methods
+- HTTP Security, HTTP access control (CORS), HTTP authentication: https://developer.mozilla.org/en-US/docs/Web/HTTP):
+- Authentication Methods (Basic, Session, Token, JWT, OAuth, SSO): https://testdriven.io/blog/web-authentication-methods/, https://byby.dev/auth-methods)
+
+Exercise:
+- https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=446
+
+
 
 
 ### 9. Interoperability: Standardized vocabularies in healthcare
@@ -196,7 +197,6 @@ Exercise:
 ### 13. Data Normalization and Harmonization
 
 ### 14. Building and Deploying Systems (Cloud Computing, Dev Ops, Dependency Management)
-
 
 
 ### Literature:
@@ -221,7 +221,6 @@ Exercise:
 ### Future Topics:
 
 https://link.springer.com/book/10.1007/978-3-031-11302-4
-
 
 
 ## Exercise and Tutorials
