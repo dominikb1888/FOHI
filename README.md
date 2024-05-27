@@ -157,24 +157,16 @@ Exercise (Chapter 8: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.
 ### 7. Health Informatics and Healthcare Data
 
 1. Lecture:  What is Health-care Data, why health informatics?
-- History of Health, Healthcare, Biomedical Informatics
-- What is health data? How does data become health data, healthcare data, medical data?
-- What are current trends and stati in different regions
-- Goals: What is this course about: Data Engineering for health systems
 
 2. Hands-on: Technical Framework and Process: Nix, Docker, Postgresql, Rust, Python, Java, Neo4j, RDF
-- How to build replicable systems
-- How to run and serve microservices
-- How to store and server health data
-- How to build data intensive applications
 - Setting up our Dev Environment
 - Running Synthea to create FHIR Bundles
 - Using Jupyter Notebooks
 
+3. Guest Lecture:
+- Digital Identities in Healthcare (Matthias Berger, Azuma)
 
-### 8. HTTP Security: Trusting Users and User Data (Chapter 37: https://beej.us/guide/bgnet0/html/#trusting-user-data)
-
-Lecture:
+Additional Reading:
 - Encryption Methods
 - HTTP Security, HTTP access control (CORS), HTTP authentication: https://developer.mozilla.org/en-US/docs/Web/HTTP):
 - Authentication Methods (Basic, Session, Token, JWT, OAuth, SSO): https://testdriven.io/blog/web-authentication-methods/, https://byby.dev/auth-methods)
@@ -183,20 +175,48 @@ Exercise:
 - https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=446
 
 
+### 8. Interoperability: Standardized Vocabularies in Healthcare
+
+Lecture:
+
+- HL 7
+- Snomed, ICD
+- HL7 FHIR
+
+Hands-on:
+
+- Validating HL7 and HL7 FHIR
 
 
-### 9. Interoperability: Standardized vocabularies in healthcare
+### 9. Document Data: Electronic Health Records (EHR)
 
-### 10. Document Data: Electronic Health Records (EHR)
+Lecture:
+- Hospital Information Systems (HIS) and Electronic Health Record (EHR)
 
-### 11. Imaging Data (DICOM, PACS)
+Hands-on:
+- Producing a simple HIS and EHR in FHIR
 
-### 12. Sensor Data: Deep Dive: Wearable Device Data (Garmin)
-  - https://martin-ueding.de/posts/heart-rate-monitor-with-python/
 
-### 13. Data Normalization and Harmonization
+### 10. Imaging Data (DICOM, PACS)
 
-### 14. Building and Deploying Systems (Cloud Computing, Dev Ops, Dependency Management)
+Lecture:
+- PACS,
+- Imaging and Imaging Data
+
+Hands-on:
+- Analysing DICOM Data
+
+
+### 11. Sensor Data: Deep Dive: Wearable Device Data (Garmin)
+- https://martin-ueding.de/posts/heart-rate-monitor-with-python/
+
+### 12. Data Normalization and Harmonization
+
+Lecture:
+- What is data quality in wearable devices?
+-
+
+Hands-on:
 
 
 ### Literature:
