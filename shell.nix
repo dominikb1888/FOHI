@@ -4,7 +4,7 @@ let
  pythonEnv = with pkgs.python311Packages; [
     # Data Science Basics
     ipython
-
+    jupyterlab
 
     # Database Tools
     # sqlalchemy
@@ -73,19 +73,27 @@ let
     #     rdflib
     #     pyyaml
     #   ]; })
-    # ( buildPythonPackage rec {
-    #   pname = "fhir.resources";
-    #   version = "6.5.0";
-    #   src = fetchPypi {
-    #     inherit pname version;
-    #     sha256 = "1d02ff2547e5b6323543c8ce9916e0c9e5536847b3b2171acb1f51a86efba16e";
-    #   };
-    #   doCheck = false;
-    #   propagatedBuildInputs = [
-    #     pydantic
-    #     setuptools
-    #   ];
-    # })
+    ( buildPythonPackage rec {
+      pname = "fhir.resources";
+      version = "7.1.0";
+      src = fetchPypi {
+        inherit pname version;
+        sha256 = "fae2d43c03dacf85a9f9fbce3b62148f3166fe297471cd43b74d91abbf69f818";
+      };
+      doCheck = false;
+      propagatedBuildInputs = [
+        pydantic
+        setuptools
+      ];
+      # Disable pytest-runner if it tries to use it
+    nativeBuildInputs = [ ];
+    installCheckPhase = ''
+      echo "Skipping tests as they require pytest-runner."
+    '';
+
+    # Use pipInstallHook to manage dependencies
+    buildInputs = [ pipInstallHook ];
+    })
   ];
 in pkgs.mkShell {
   buildInputs = with pkgs; [
@@ -96,5 +104,6 @@ in pkgs.mkShell {
     # postgresql
     # keep this line if you use bash
     pkgs.bashInteractive
+    jdk
   ];
 }
