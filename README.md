@@ -188,13 +188,25 @@ Hands-on:
 - Validating HL7 and HL7 FHIR
 
 
-### 9. Document Data: Electronic Health Records (EHR)
+### 9. Interoperability: Profiling
 
 Lecture:
-- Hospital Information Systems (HIS) and Electronic Health Record (EHR)
+- FHIR Profiles: https://www.devdays.com/wp-content/uploads/2021/12/DD21US_20210608_Mirjam_Baltus_Introduction_to_Profiling.pdf
+
+
+Resources:
+- FHIR Packages: https://registry.fhir.org/learn
+- FHIR Registry: https://www.fhir.org/guides/registry/
+- https://simplifier.net/
 
 Hands-on:
-- Producing a simple HIS and EHR in FHIR
+- Extending our Chat Application with Validation of FHIR resources
+- Adding Heart Rate Data (https://build.fhir.org/observation-example-heart-rate.html)
+
+- Conceptualizing additional Context with FHIR Profiles
+
+Reading:
+- https://www.health-samurai.io/articles/aidbox-for-wearable-and-medical-devices
 
 
 ### 10. Imaging Data (DICOM, PACS)

@@ -5,7 +5,9 @@ let
     # Data Science Basics
     ipython
     jupyterlab
-
+    matplotlib
+    numpy
+    scipy
     # Database Tools
     # sqlalchemy
     # neo4j
