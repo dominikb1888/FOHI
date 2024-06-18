@@ -31,6 +31,8 @@ let
    # alembic
    pytest
 
+   pydicom
+
     # CLI
     # rich
     #
