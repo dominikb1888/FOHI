@@ -219,8 +219,31 @@ Hands-on:
 - Analysing DICOM Data
 
 
-### 11. Sensor Data: Deep Dive: Wearable Device Data (Garmin)
-- https://martin-ueding.de/posts/heart-rate-monitor-with-python/
+### 11. Sensor Data: Deep Dive
+
+Lecture:
+- Introduction to Signals and Signal Processing: https://jackschaedler.github.io/circles-sines-signals/index.html
+
+Hands-on:
+- Capturing and Filtering Sound Signals with Python and Matplotlib
+- ECG vs. PPG: https://www.ti.com/video/5423211783001#:~:text=First%20of%20all%2C%20ECG%20is,determine%20a%20patient's%20heart%20rate.
+- PPG Signals: https://github.com/paulvangentcom/heartrate_analysis_python/blob/master/examples/1_regular_PPG/Analysing_a_PPG_signal.ipynb\
+- Smartwatch Data: https://github.com/paulvangent:qcom/heartrate_analysis_python/tree/master/examples/3_smartwatch_data
+- HRV: https://github.com/stetelepta/exploring-heart-rate-variability/
+
+Further Reading:
+- https://hackaday.com/2020/09/03/choosing-the-optimal-sampling-rate-for-your-diy-heart-rate-monitor/
+- https://iopscience.iop.org/article/10.1088/1361-6579/aa5efa
+- https://www.sciencedirect.com/science/article/pii/S1746809421001865
+- https://dl.acm.org/doi/10.1145/3266157.3266209
+
+Poincare Diagrams:
+- https://journals.tubitak.gov.tr/cgi/viewcontent.cgi?article=2391&context=elektrik
+- https://xn--hrv-herzratenvariabilitt-dcc.de/2017/07/berechnung-des-poincare-diagramms-aus-rr-intervallen/
+- https://hrvhealth.org/blog/?p=124
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8533203/
+- https://www.sciencedirect.com/science/article/abs/pii/S0010482519301246
+- https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-016-0252-0
 
 ### 12. Data Normalization and Harmonization
 

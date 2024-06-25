@@ -7,6 +7,8 @@ let
     jupyterlab
     matplotlib
     numpy
+    pandas
+    seaborn
     scipy
     # Database Tools
     # sqlalchemy
@@ -77,6 +79,50 @@ let
     #     rdflib
     #     pyyaml
     #   ]; })
+    # ( buildPythonPackage rec {
+    #   pname = "wfdb";
+    #   version = "4.1.2";
+    #   src = fetchPypi {
+    #     inherit pname version;
+    #     sha256 = "6acef3ab2759f60cf911a57d9e5214ea15bd17b5ad4b3c66e4a57a7690e16024";
+    #   };
+    #   doCheck = false;
+    #   propagatedBuildInputs = [
+    #     pydantic
+    #     setuptools
+    #   ];
+    #   # Disable pytest-runner if it tries to use it
+    # nativeBuildInputs = [ ];
+    # installCheckPhase = ''
+    #   echo "Skipping tests as they require pytest-runner."
+    # '';
+    #
+    # # Use pipInstallHook to manage dependencies
+    # buildInputs = [ pipInstallHook ];
+    # })
+
+     ( buildPythonPackage rec {
+      pname = "heartpy";
+      version = "1.2.7";
+      src = fetchPypi {
+        inherit pname version;
+        sha256 = "01f154f330b7d221f79b7378fb6519e3647573c4274627f29f99bb569d74491e";
+      };
+      doCheck = false;
+      propagatedBuildInputs = [
+        pydantic
+        setuptools
+      ];
+      # Disable pytest-runner if it tries to use it
+    nativeBuildInputs = [ ];
+    installCheckPhase = ''
+      echo "Skipping tests as they require pytest-runner."
+    '';
+
+    # Use pipInstallHook to manage dependencies
+    buildInputs = [ pipInstallHook ];
+    })
+
     ( buildPythonPackage rec {
       pname = "fhir.resources";
       version = "7.1.0";
