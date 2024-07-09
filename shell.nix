@@ -27,12 +27,12 @@ let
    # fhir.resources
    # fhirclient
    # # orjson
-   # fastapi
-   # uvicorn
+   fastapi
+   uvicorn
    # sqlalchemy
    # alembic
    pytest
-
+   pillow
    pydicom
 
     # CLI
