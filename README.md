@@ -1,9 +1,9 @@
 # Foundations of Health Informatics - Networking and Data Exchange in Healthcare
 
 
-## Course Project: [FASTapi FHIRchat](https://github.com/dominikb1888/fast_fhirchat)
+## Course Project: [FHIRedit](TBD)
 
-In our course project we will build an interactive web application for exchanging healthcare data between doctors and patients. We will (step-by-step) extend it and apply our knowledge on Networking, Healthcare Data and Security.
+In our course project we will build an interactive web application for collaborating on healthcare data between doctors and patients. We will (step-by-step) extend our Text Editor (https://github.com/dominikb1888/rim) and apply our knowledge on Networking, Healthcare Data and Security.
 
 ## Literature
 
