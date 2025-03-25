@@ -114,6 +114,10 @@ Exercise (Chapter 10b: https://ebookcentral.proquest.com/lib/th-deggendorf/reade
 - TCP Sequence Attacks
 - Session Hijacking
 
+Readings:
+- https://inc0x0.com/tcp-ip-packets-introduction/
+- https://medium.com/@sarunyouwhangbunyapirat/packet-manipulation-with-netcat-and-scapy-9403ebaa82de
+
 
 ### 4. IP Subnets, IP Routing and ARP
 
@@ -127,6 +131,7 @@ Lecture (Chapter 17 - 23: https://beej.us/guide/bgnet0/html/#ip-subnets-and-subn
 Exercise (Chapter 12: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.action?docID=7114316&ppg=386)
 - Implement Dijkstra's Algorithm in Python
 - Sniffing ARP Packets with Wireshark
+- Creating ICMP Packets: https://inc0x0.com/icmp-ip-packets-ping-manually-create-and-send-icmp-ip-packets/
 
 ### 5. Network Security: Packet Tracing, Port Scanning and Firewalls
 
