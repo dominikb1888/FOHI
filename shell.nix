@@ -4,12 +4,11 @@ let
  pythonEnv = with pkgs.python311Packages; [
     # Data Science Basics
     ipython
-    jupyterlab
-    matplotlib
-    numpy
-    pandas
-    seaborn
-    scipy
+    # jupyterlab
+    # matplotlib
+    # numpy
+    # pandas
+
     # Database Tools
     # sqlalchemy
     # neo4j
@@ -27,13 +26,13 @@ let
    # fhir.resources
    # fhirclient
    # # orjson
-   fastapi
-   uvicorn
-   # sqlalchemy
-   # alembic
-   pytest
-   pillow
-   pydicom
+   # fastapi
+   # uvicorn
+   # # sqlalchemy
+   # # alembic
+   # pytest
+   # pillow
+   # pydicom
 
     # CLI
     # rich
@@ -100,50 +99,50 @@ let
     # # Use pipInstallHook to manage dependencies
     # buildInputs = [ pipInstallHook ];
     # })
-
-     ( buildPythonPackage rec {
-      pname = "heartpy";
-      version = "1.2.7";
-      src = fetchPypi {
-        inherit pname version;
-        sha256 = "01f154f330b7d221f79b7378fb6519e3647573c4274627f29f99bb569d74491e";
-      };
-      doCheck = false;
-      propagatedBuildInputs = [
-        pydantic
-        setuptools
-      ];
-      # Disable pytest-runner if it tries to use it
-    nativeBuildInputs = [ ];
-    installCheckPhase = ''
-      echo "Skipping tests as they require pytest-runner."
-    '';
-
-    # Use pipInstallHook to manage dependencies
-    buildInputs = [ pipInstallHook ];
-    })
-
-    ( buildPythonPackage rec {
-      pname = "fhir.resources";
-      version = "7.1.0";
-      src = fetchPypi {
-        inherit pname version;
-        sha256 = "fae2d43c03dacf85a9f9fbce3b62148f3166fe297471cd43b74d91abbf69f818";
-      };
-      doCheck = false;
-      propagatedBuildInputs = [
-        pydantic
-        setuptools
-      ];
-      # Disable pytest-runner if it tries to use it
-    nativeBuildInputs = [ ];
-    installCheckPhase = ''
-      echo "Skipping tests as they require pytest-runner."
-    '';
-
-    # Use pipInstallHook to manage dependencies
-    buildInputs = [ pipInstallHook ];
-    })
+    #
+    #  ( buildPythonPackage rec {
+    #   pname = "heartpy";
+    #   version = "1.2.7";
+    #   src = fetchPypi {
+    #     inherit pname version;
+    #     sha256 = "01f154f330b7d221f79b7378fb6519e3647573c4274627f29f99bb569d74491e";
+    #   };
+    #   doCheck = false;
+    #   propagatedBuildInputs = [
+    #     pydantic
+    #     setuptools
+    #   ];
+    #   # Disable pytest-runner if it tries to use it
+    # nativeBuildInputs = [ ];
+    # installCheckPhase = ''
+    #   echo "Skipping tests as they require pytest-runner."
+    # '';
+    #
+    # # Use pipInstallHook to manage dependencies
+    # buildInputs = [ pipInstallHook ];
+    # })
+    #
+    # ( buildPythonPackage rec {
+    #   pname = "fhir.resources";
+    #   version = "7.1.0";
+    #   src = fetchPypi {
+    #     inherit pname version;
+    #     sha256 = "fae2d43c03dacf85a9f9fbce3b62148f3166fe297471cd43b74d91abbf69f818";
+    #   };
+    #   doCheck = false;
+    #   propagatedBuildInputs = [
+    #     pydantic
+    #     setuptools
+    #   ];
+    #   # Disable pytest-runner if it tries to use it
+    # nativeBuildInputs = [ ];
+    # installCheckPhase = ''
+    #   echo "Skipping tests as they require pytest-runner."
+    # '';
+    #
+    # # Use pipInstallHook to manage dependencies
+    # buildInputs = [ pipInstallHook ];
+    # })
   ];
 in pkgs.mkShell {
   buildInputs = with pkgs; [
