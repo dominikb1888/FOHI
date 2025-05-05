@@ -55,6 +55,10 @@ def tcp_checksum(source_ip, dest_ip, tcp_data):
     # Calculate the checksum
     return calculate_checksum(combined_data)
 
+def ip_addr_to_binary(ipaddr):
+    ipseg = list(map(int, ipaddr.split(".")))
+    return (ipseg[0] << 24) | (ipseg[1] << 16) | (ipseg[2] << 8) | ipseg[3]
+
 
 def process_tcp_data(folder_path):
     """
@@ -65,36 +69,35 @@ def process_tcp_data(folder_path):
     for i in range(10):  # Assuming there are 10 .dat files
         # File path
         data_file = os.path.join(folder_path, f"tcp_data_{i}.dat")
-
+        addrs_file = os.path.join(folder_path, f"tcp_addrs_{i}.txt")
         # Read the raw TCP packet from the .dat file
         with open(data_file, 'rb') as f:
             packet = f.read()
 
+        with open(addrs_file, 'r') as f:
+            addrs = f.read()
+
+        src, dest = addrs.split()
         # Extract the IP header fields
-        ip_header = packet[:20]  # First 20 bytes are the IP header
-        ip_version_ihl = ip_header[0]
-        ip_ihl = ip_version_ihl & 0x0F  # Internet Header Length (IHL)
-        ip_source = ".".join(map(str, ip_header[12:16]))
-        ip_dest = ".".join(map(str, ip_header[16:20]))
-
-        # Extract the TCP segment
-        ip_header_length = ip_ihl * 4  # IHL in bytes
-        tcp_segment = packet[ip_header_length:]
-
+        # 1. Convert ip address to bytes for both src and dest address
+        # 2. Add Zero -> 0x00
+        # 3. PTCL -> 0x06
+        # 4. TCP Packet Length
         # Extract the embedded checksum from the TCP header
-        tcp_checksum_embedded = struct.unpack('!H', tcp_segment[16:18])[0]
+        tcp_checksum_embedded = struct.unpack('!H', packet[16:18])[0]
 
         # Temporarily set the checksum field to zero for calculation
-        tcp_segment_zeroed = tcp_segment[:16] + b'\x00\x00' + tcp_segment[18:]
+        tcp_segment_zeroed = packet[:16] + b'\x00\x00' + packet[18:]
+
 
         # Calculate the correct checksum
-        calculated_checksum = tcp_checksum(ip_source, ip_dest, tcp_segment_zeroed)
+        calculated_checksum = tcp_checksum(src, dest, tcp_segment_zeroed)
 
         # Compare the checksums
         is_valid = calculated_checksum == tcp_checksum_embedded
 
         # Print the result
-        print(f"File tcp_data_{i}.dat: {'Valid' if is_valid else 'Invalid'}")
+        print(f"{'PASS' if is_valid else 'FAIL'} | C: {calculated_checksum} | E: {tcp_checksum_embedded}")
 
 
 # Example usage
@@ -104,4 +107,3 @@ if __name__ == "__main__":
 
     # Process all TCP data files
     process_tcp_data(folder_path)
-    print(f"Calculated TCP Checksum: {checksum:#06x}")
