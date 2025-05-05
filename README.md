@@ -168,8 +168,6 @@ Exercise (Chapter 8: https://ebookcentral.proquest.com/lib/th-deggendorf/reader.
 - Running Synthea to create FHIR Bundles
 - Using Jupyter Notebooks
 
-3. Guest Lecture:
-- Digital Identities in Healthcare (Matthias Berger, Azuma)
 
 Additional Reading:
 - Encryption Methods
