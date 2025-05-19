@@ -4,39 +4,22 @@ let
  pythonEnv = with pkgs.python311Packages; [
     # Data Science Basics
     ipython
-    # jupyterlab
-    # matplotlib
-    # numpy
-    # pandas
+    jupyterlab
+    matplotlib
+    numpy
+    pandas
 
     # Database Tools
     # sqlalchemy
+    # alembic
     # neo4j
-    #
-    # Data Query tools
-    # pm4py
-    # gnuhealth
-   # Testing and CLI
 
-    #DICOM
-    # pydicom
-    #
-   #  garminconnect
-   # # fhir tools
-   # fhir.resources
-   # fhirclient
-   # # orjson
-   # fastapi
-   # uvicorn
-   # # sqlalchemy
-   # # alembic
-   # pytest
-   # pillow
-   # pydicom
 
-    # CLI
-    # rich
-    #
+   fastapi
+   uvicorn
+   pytest
+   pillow
+
     # # Custom Derivations
     # ( buildPythonPackage rec {
     #   pname = "fastapi-sqlmodel-crud";
@@ -122,27 +105,27 @@ let
     # buildInputs = [ pipInstallHook ];
     # })
     #
-    # ( buildPythonPackage rec {
-    #   pname = "fhir.resources";
-    #   version = "7.1.0";
-    #   src = fetchPypi {
-    #     inherit pname version;
-    #     sha256 = "fae2d43c03dacf85a9f9fbce3b62148f3166fe297471cd43b74d91abbf69f818";
-    #   };
-    #   doCheck = false;
-    #   propagatedBuildInputs = [
-    #     pydantic
-    #     setuptools
-    #   ];
-    #   # Disable pytest-runner if it tries to use it
-    # nativeBuildInputs = [ ];
-    # installCheckPhase = ''
-    #   echo "Skipping tests as they require pytest-runner."
-    # '';
-    #
-    # # Use pipInstallHook to manage dependencies
-    # buildInputs = [ pipInstallHook ];
-    # })
+    ( buildPythonPackage rec {
+      pname = "fhir.resources";
+      version = "7.1.0";
+      src = fetchPypi {
+        inherit pname version;
+        sha256 = "fae2d43c03dacf85a9f9fbce3b62148f3166fe297471cd43b74d91abbf69f818";
+      };
+      doCheck = false;
+      propagatedBuildInputs = [
+        pydantic
+        setuptools
+      ];
+    # Disable pytest-runner if it tries to use it
+    nativeBuildInputs = [ ];
+    installCheckPhase = ''
+      echo "Skipping tests as they require pytest-runner."
+     '';
+
+    # Use pipInstallHook to manage dependencies
+    buildInputs = [ pipInstallHook ];
+    })
   ];
 in pkgs.mkShell {
   buildInputs = with pkgs; [
