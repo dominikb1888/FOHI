@@ -14,7 +14,6 @@ let
     # alembic
     # neo4j
 
-
    fastapi
    uvicorn
    pytest
