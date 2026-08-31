@@ -31,13 +31,13 @@ You are required to submit a set of ungraded deliverables during the course of t
 
 Until Session...
 
-2 - Simple Socket
-4 - Web Server
-6 - UDP Pinger
-8 - HTTP Web Proxy
-10 - ICMP Pinger
-12 - Traceroute
-14 - Video Streaming
+02 - [Simple Socket Server](Deliverables/02_simple_socket_server.md)
+04 - [Web Server](Deliverables/4_WebServer.md)
+06 - [UDP Pinger](Deliverables/6_UDP_Pinger)
+08 - [HTTP Web Proxy](Deliverables/8_Web_Proxy.md)
+10 - [ICMP Pinger](Deliverables/10_ICMP_ping.md)
+12 - [Traceroute](Deliverables/12_Traceroute.md)
+14 - [Video Streaming](Deliverables/14_VideoStreaming.md)
 
 ## Sessions
 
