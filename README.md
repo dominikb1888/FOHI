@@ -47,19 +47,16 @@ Structure:
 - Lecture (I Show, You question): Networking, Health Data or Security Topic (30 min)
 - Interactive Networking Lab (You do, I support): Applied networking, healthcare data and security (60 min)
 
-
 ### 1. Introduction
 
-### 2. The Physical Layer
+### 2. The Application Layer (2 Sessions)
 
-### 3. The Data Link Layer
+### 4. The Transport Layer (2 Sessison)
 
-### 4. The Medium Access Control Sublayer
+### 6. The Network Layer: Data Plane (2 Sessions)
 
-### 5. The Network Layer
+### 8. The Network Layer: Control Plane (2 Sessions)
 
-### 6. The Transport Layer
+### 10. The Data Link Layer (2 Sessions)
 
-### 7. The Application Layer
-
-### 8. Network Security
+### 12. The Physical Layer (2 Sessions)
