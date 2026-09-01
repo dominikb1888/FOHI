@@ -4,7 +4,9 @@ In our course project we will explore the basics of computer network with a focu
 
 ## Require Reading
 
-- https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6432074](Computer Networking a Top-Down Approach)
+- [Computer Networking a Top-Down Approach](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6644664)
+- Additional Resources: https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm
+
 
 ## Online Course Materials (Cisco Networking Basics)
 
@@ -47,16 +49,124 @@ Structure:
 - Lecture (I Show, You question): Networking, Health Data or Security Topic (30 min)
 - Interactive Networking Lab (You do, I support): Applied networking, healthcare data and security (60 min)
 
-### 1. Introduction
+### 1. Introduction - Computer Networks and the Internet
+
+Content:
+- Course Introduction
+- Networks and Internet
+- Network Core
+- Protocols and OSI Model
+- Current Topics in Digital Health
+
+Reading:
+- Chapter 1: Computer Networks and the Internet, pp. 31-108
+- Network Hardware: https://beej.us/guide/bgnet0/html/split/network-hardware.html
+
+Lab:
+- Direct Connection: https://beej.us/guide/bgnet0/html/split/project-packet-tracer-connect-two-computers.html#project-packet-tracer-connect-two-computers
+- Switch: https://beej.us/guide/bgnet0/html/split/project-packet-tracer-using-a-switch.html
+-= Router: https://beej.us/guide/bgnet0/html/split/project-packet-tracer-using-a-router.html
+
+Deliverable:
+- Network Knowledge Check-up
 
 ### 2. The Application Layer (2 Sessions)
 
-### 4. The Transport Layer (2 Sessison)
+Content:
+- Application Layer Principles
+- Protocols (HTTP, SMTP, DNS)
+- P2P and Streaming
 
-### 6. The Network Layer: Data Plane (2 Sessions)
+Reading:
+- Chapter 2: Application Layer, pp. 111-208
 
-### 8. The Network Layer: Control Plane (2 Sessions)
+Labs:
+- Intro
+- HTTP
+- DNS
 
-### 10. The Data Link Layer (2 Sessions)
+Deliverable:
+- Socket Programming
 
-### 12. The Physical Layer (2 Sessions)
+
+
+### 3. The Transport Layer (2 Sessison)
+
+Content:
+- UDP
+- Principles of Reliable Data Transfer
+- TCP
+- Congestion Control Mechanisms
+
+Reading:
+- Chapter 3: Transport Layer, pp. 211-331
+
+Labs:
+- TCP
+- UDP
+
+Deliverable:
+- Web Server
+
+### 4. The Network Layer: Data Plane (2 Sessions)
+
+Content:
+- Network Layer Overview
+- Routers
+- IPv4 and IPv6
+- Forwarding, SDN, Middleboxes
+
+Reading:
+- Chapter 4: Network Layer: Data Plane, pp. 333-405
+
+Labs:
+- IP
+
+Deliverable:
+
+### 5. The Network Layer: Control Plane (2 Sessions)
+
+Content:
+- Routing
+- SDN
+- ICMP
+- SNMP
+
+Reading:
+- Chapter 5: Network Layer: Control Plane, pp. 407-476
+
+Labs:
+- NAT
+
+### 6. The Data Link Layer (2 Sessions)
+
+Content:
+- Introduction
+- Link Layer
+- Multi-Acces Links
+- Switched LANs
+- Link Virtualization
+- Data Center Networking
+
+Reading:
+- Chapter 6: The Link Layer and LANs, pp. 479-558
+
+Labs:
+- DHCP
+- Ethernet & ARP
+
+### 7. Wireless and Mobile Networks (2 Sessions)
+
+Content:
+- Wifi
+- Cellular Networks
+- Mobility Management: Principles & Practice
+
+Reading:
+- Chapter 7: Wireless and Mobile Networks, pp. 561-633
+
+
+Labs:
+- WiFi
+
+### 8. Security in Computer Networks (optional)
