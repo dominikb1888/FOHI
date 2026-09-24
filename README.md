@@ -2,15 +2,16 @@
 
 In our course project we will explore the basics of computer network with a focus on applications in healthcare.
 
-## Require Reading
+## Required Reading
 
 - [Computer Networking a Top-Down Approach](https://ebookcentral.proquest.com/lib/th-deggendorf/detail.action?docID=6644664)
 - Additional Resources: https://gaia.cs.umass.edu/kurose_ross/online_lectures.htm
 
 
-## Online Course Materials (Cisco Networking Basics)
+## Online Exercise Materials (Cisco Networking Basics)
 
-- https://skillsforall.com/course/networking-basics?courseLang=en-US
+- Networking Basics: https://skillsforall.com/course/networking-basics?courseLang=en-US
+- Cisco Packet Tracer: https://www.netacad.com/resources/lab-downloads?courseLang=en-US
 
 
 ## Goals:
