@@ -30,7 +30,7 @@ In our course project we will explore the basics of computer network with a focu
 
 ## Deliverables
 
-You are required to submit a set of ungraded deliverables during the course of the semester. I will provide feedback as we go. Please complete these deliverables before each session. The first deliverable is required for session 1. So,please work on this before the first class.
+You are required to submit a set of ungraded deliverables during the course of the semester. I will provide feedback as we go. Please complete these deliverables before each session.
 
 Until Session...
 
@@ -47,8 +47,8 @@ Until Session...
 Health Informatics is the application of digital methods and tools to processes around health and healthcare. This may be within a clinical environment or before that. The reason data  becomes health data is the question we ask to that data or the task we want to automate based on it. Storing and accessing this data and making it useful for healthcare professionals is key.
 
 Structure:
-- Lecture (I Show, You question): Networking, Health Data or Security Topic (30 min)
-- Interactive Networking Lab (You do, I support): Applied networking, healthcare data and security (60 min)
+- Lecture (I Show, You question): Networking, Health Data or Security Topic (60 min)
+- Interactive Networking Lab (You do, I support): Applied networking, healthcare data and security (30 min)
 
 ### 1. Introduction - Computer Networks and the Internet
 
