@@ -91,7 +91,7 @@ Deliverable:
 
 
 
-### 3. The Transport Layer (2 Sessison)
+### 3. The Transport Layer (2 Sessions)
 
 Content:
 - UDP
